@@ -14,13 +14,17 @@ body {
 		align-items: center;
 		padding: 0 18px;
 		position: sticky;
+		width: 100%;
+		box-sizing: border-box;
 	}
 
 	.navbar {
 		display: flex;
 		flex-direction: row-reverse;
-		justify-content: flex-end;
+		justify-content: center;
 		width: 100%;
+		align-items: center;
+		
 	}
 
 	#logo {
@@ -41,9 +45,18 @@ body {
 
 	.Hamberger {
 		background-image: url("./images/iconsO-menu.svg");
-		height: 50px;
-		width: 50px;
-		
+		height: 30px;
+		background-repeat: no-repeat;
+		width: 30px;
+		position: absolute;
+		z-index: 2;
+		align-self: flex-start;
+		left: 20px;
+		top: 20px;
+		bottom: 20px;
+		margin: auto;
+		box-sizing: border-box;
+
 	}
 
 	#presentation {
@@ -51,7 +64,7 @@ body {
 		background-repeat: no-repeat;
 		background-size: 100% 65%;
 		min-height: 65vh;
-		margin-bottom: 0;
+		margin-bottom: -20px;
 		box-sizing: border-box;
 	}
 
@@ -59,9 +72,9 @@ body {
 		background-color: #f8f8f8ee;
 		width: 100%;
 		min-height: 65vh;
-		min-height: 80vh;
 		padding: 90px 18px;
-
+		box-sizing: border-box;
+		margin: 0;
 	}
 
 	.presentation-greeting {
@@ -115,5 +128,118 @@ body {
 		color: #868686;
 	}
 
+	/* program section  */
+
+	#program {
+		background-image: url("https://avante.biz/wp-content/uploads/Black-Pattern-Wallpaper/Black-Pattern-Wallpaper-013.jpg");
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		display: flex;
+		mix-blend-mode: normal;
+		padding-bottom: 30px;
+	}
+
+	.main-program {
+		width: 100%;
+		gap: 0;
+		height: 77px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		letter-spacing: -0.04em;
+		color: #fff;
+		flex-direction: column;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.t-buttom {
+		height: 3px;
+		width: 40px;
+		margin-top: -10px;
+		padding: 0;
+		background-color: #a04038;
+		box-sizing: border-box;
+	}
+
+	.program-grid {
+		display: grid;
+		grid-template-columns: auto;
+		justify-items: center;
+		width: 100%; 
+		grid-area: 10px;
+		grid-row-gap: 12px;
+	}
+
+	.program-item {
+		background-color: #ffffff48;
+		display: flex;
+		height: 80px;
+		align-items: center;
+		width: 90%;
+		justify-content: space-between;
+		text-align: justify;
+		padding: 10px;
+	}
+
+	.program-title {
+		width: 65.11px;
+			height: auto;
+		font-family: 'Lato', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 14.2712px;
+			line-height: 25px;
+			letter-spacing: -0.01em;
+			margin-right: 20px;
+			margin-left: 20px;
+			color: #ff5438;
+			align-self: center;
+	}
+
+	.program-text {
+		width: 191.77px;
+			height: 82.06px;
+		
+			font-family: 'Lato', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 10.7034px;
+			line-height: 22px;
+			display: flex;
+			align-items: center;
+			letter-spacing: 0.06em;
+		
+			color: #fff;
+	}
+
+	.btnJoin {
+		display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 20px 30px;
+			gap: 10px;
+		width: 300px;
+			height: 68px;
+		background: #ff4f38;
+margin-top: 20px;
+		width: 75%;
+			height: 28px;
+		color: #fff;
+			font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			font-size: 16px;
+			line-height: 28px;
+			letter-spacing: -0.01em;
+	}
 
 }
