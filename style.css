@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (width < 768px) {
+	#header {
+		height: 60px;
+		padding: auto;
+		display: flex;
+		gap: 0;
+		align-items: center;
+		padding: 0 18px;
+		position: sticky;
+	}
+
+	.navbar {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		width: 100%;
+	}
+
+	#logo {
+		align-self: center;
+		justify-self: center;
+		justify-content: center;
+		width: 100%;
+		display: flex;
+	}
+
+	.preNav {
+		display: none;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.Hamberger {
+		background-image: url("./images/iconsO-menu.svg");
+		height: 50px;
+		width: 50px;
+		
+	}
+
+	#presentation {
+		background-image: url("https://th.bing.com/th/id/R.184dfc46de57f407b899271605d526a2?rik=FsUY%2bgWQhKeeCg&riu=http%3a%2f%2fwww.pearltrees.com%2fs%2fbackground%2fimage%2fc2%2f80%2fc280e28110cfbcb4c221c1d2fde07c32.jpg&ehk=%2b7Fmn9It1auhqZeBq1yrWv9sAviRKzIus8sgMzhZQv4%3d&risl=&pid=ImgRaw&r=0");
+		background-repeat: no-repeat;
+		background-size: 100% 65%;
+		min-height: 65vh;
+		margin-bottom: 0;
+		box-sizing: border-box;
+	}
+
+	.cover {
+		background-color: #f8f8f8ee;
+		width: 100%;
+		min-height: 65vh;
+		min-height: 80vh;
+		padding: 90px 18px;
+
+	}
+
+	.presentation-greeting {
+		height: 140px;
+		width: 80%;
+		box-sizing: border-box;
+		background: url('./images/theme.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	.presentation-desc {
+		width: 328px;
+		height: 51px;
+		font-family: 'Lato', sans-serif;
+		box-sizing: border-box;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.01em;
+		color: #515151;
+		background: #f8f8f8;
+		border: 4px solid #fff;
+	}
+
+	.date {
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 0px;
+		width: 286.39px;
+		height: 36.76px;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.08em;
+		color: #595959;
+	}
+
+	.adresse {
+		font-family: 'Gothic A1', sans-serif;
+		box-sizing: border-box;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 20px;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.02em;
+		color: #868686;
+	}
+
+
+}
