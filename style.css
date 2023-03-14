@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 body {
 	margin: 0;
@@ -77,7 +77,6 @@ body {
 	.nav-item {
 		display: flex;
 		flex-direction: column;
-
 		position: absolute;
 		top: 60px;
 		list-style: none;
@@ -96,7 +95,7 @@ body {
 		line-height: 17px;
 		display: flex;
 		align-items: center;
-		color: #8686;
+		color: #666666;
 	}
 
 	.changeIcon {
@@ -139,18 +138,38 @@ body {
 	}
 
 	.presentation-greeting {
-		height: 140px;
-		width: 80%;
+		height: auto;
+		width: 100%;
 		box-sizing: border-box;
-		background: url('./images/theme.svg');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		margin-top: 50px;
+		margin-top: 75px;
 		margin-bottom: 7px;
 	}
 
+	.hello {
+		color: orangered;
+		font-weight: 100;
+		font-size: 6vw;
+		line-height: 23px;
+		margin: 0;
+		margin-bottom: -20px;
+	}
+
+	.creativeText {
+		background-image: url('https://files.123freevectors.com/wp-content/original/113144-red-and-orange-blurred-background-vector.jpg');
+		background-color: orangered;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 7vw;
+		font-weight: 900;
+		background-color: #000;
+		font-family: 'Lato', sans-serif;
+	}
+
 	.presentation-desc {
-		width: 328px;
+
 		height: 51px;
 		font-family: 'Lato', sans-serif;
 		box-sizing: border-box;
@@ -303,7 +322,16 @@ body {
 		letter-spacing: -0.01em;
 	}
 
-	.speakers {
+	.featured {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		padding-bottom: 35px;
+		height: auto;
+	}
+
+	#speakers {
 		display: grid;
 		grid-column: auto;
 		justify-items: center;
@@ -317,20 +345,26 @@ body {
 		line-height: 28px;
 		letter-spacing: -0.05em;
 		color: #000;
+		margin-bottom: 15px;
 	}
 
 	.profile-card {
-		width: 90%;
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto;
+		row-gap: 12px;
+		height: auto;
 	}
 
 	.profile-picture {
 		margin-right: 20px;
 	}
 
-	.profile {
+	#profile {
 		display: flex;
 		align-items: center;
 		margin-top: 20px;
+		width: 95%;
 	}
 
 	.profile-nom {
@@ -347,7 +381,6 @@ body {
 	}
 
 	.profile-function {
-		height: 30px;
 		font-family: 'Lato', sans-serif;
 		font-style: normal;
 		font-weight: 700;
@@ -355,6 +388,11 @@ body {
 		line-height: 15px;
 		letter-spacing: -0.02em;
 		color: #f78c89;
+		width: 226px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.02em;
 	}
 
 	.t-profile {
@@ -371,6 +409,9 @@ body {
 		line-height: 14px;
 		letter-spacing: -0.06em;
 		color: #000;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.06em;
 	}
 
 	.showMore {
@@ -383,10 +424,10 @@ body {
 		box-sizing: border-box;
 		width: 306px;
 		height: 38px;
-		margin-top: 40px;
+		margin-top: 30px;
 		border: 1px solid #dcdcdc;
 		border-radius: 4px;
-		margin-bottom: 70px;
+		margin-bottom: 10px;
 		font-family: 'Lato', sans-serif;
 		font-style: normal;
 		font-weight: 700;
