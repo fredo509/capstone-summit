@@ -16,6 +16,7 @@ body {
 		position: sticky;
 		width: 100%;
 		box-sizing: border-box;
+		position: sticky;
 	}
 
 	.navbar {
@@ -24,7 +25,6 @@ body {
 		justify-content: center;
 		width: 100%;
 		align-items: center;
-		
 	}
 
 	#logo {
@@ -62,7 +62,7 @@ body {
 	#presentation {
 		background-image: url("https://th.bing.com/th/id/R.184dfc46de57f407b899271605d526a2?rik=FsUY%2bgWQhKeeCg&riu=http%3a%2f%2fwww.pearltrees.com%2fs%2fbackground%2fimage%2fc2%2f80%2fc280e28110cfbcb4c221c1d2fde07c32.jpg&ehk=%2b7Fmn9It1auhqZeBq1yrWv9sAviRKzIus8sgMzhZQv4%3d&risl=&pid=ImgRaw&r=0");
 		background-repeat: no-repeat;
-		background-size: 100% 65%;
+		background-size: 100% 100%;
 		min-height: 65vh;
 		margin-bottom: -20px;
 		box-sizing: border-box;
@@ -72,7 +72,7 @@ body {
 		background-color: #f8f8f8ee;
 		width: 100%;
 		min-height: 65vh;
-		padding: 90px 18px;
+		padding: 80px 18px;
 		box-sizing: border-box;
 		margin: 0;
 	}
@@ -84,6 +84,7 @@ body {
 		background: url('./images/theme.svg');
 		background-repeat: no-repeat;
 		background-size: 100%;
+		margin-bottom: 15px;
 	}
 
 	.presentation-desc {
@@ -174,7 +175,7 @@ body {
 		display: grid;
 		grid-template-columns: auto;
 		justify-items: center;
-		width: 100%; 
+		width: 100%;
 		grid-area: 10px;
 		grid-row-gap: 12px;
 	}
@@ -192,54 +193,140 @@ body {
 
 	.program-title {
 		width: 65.11px;
-			height: auto;
+		height: auto;
 		font-family: 'Lato', sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			font-size: 14.2712px;
-			line-height: 25px;
-			letter-spacing: -0.01em;
-			margin-right: 20px;
-			margin-left: 20px;
-			color: #ff5438;
-			align-self: center;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14.2712px;
+		line-height: 25px;
+		letter-spacing: -0.01em;
+		margin-right: 20px;
+		margin-left: 20px;
+		color: #ff5438;
+		align-self: center;
 	}
 
 	.program-text {
 		width: 191.77px;
-			height: 82.06px;
-		
-			font-family: 'Lato', sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			font-size: 10.7034px;
-			line-height: 22px;
-			display: flex;
-			align-items: center;
-			letter-spacing: 0.06em;
-		
-			color: #fff;
+		height: 82.06px;
+
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 10.7034px;
+		line-height: 22px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.06em;
+
+		color: #fff;
 	}
 
 	.btnJoin {
 		display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			padding: 20px 30px;
-			gap: 10px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 40px;
+		gap: 10px;
 		width: 300px;
-			height: 68px;
+		height: 68px;
 		background: #ff4f38;
-margin-top: 20px;
-		width: 75%;
-			height: 28px;
+		margin-top: 20px;
+		width: 76%;
+		height: 28px;
 		color: #fff;
-			font-family: 'Lato', sans-serif;
-			font-weight: 900;
-			font-size: 16px;
-			line-height: 28px;
-			letter-spacing: -0.01em;
+		font-family: 'Lato', sans-serif;
+		font-weight: 900;
+		font-size: 16px;
+		line-height: 28px;
+		letter-spacing: -0.01em;
+	}
+
+	.speakers {
+		display: grid;
+		grid-column: auto;
+		justify-items: center;
+	}
+
+	.ft-speakers {
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		letter-spacing: -0.05em;
+		color: #000;
+	}
+
+	.profile-card {
+		width: 90%;
+	}
+
+	.profile-picture {
+		margin-right: 20px;
+	}
+
+	.profile {
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	.profile-nom {
+		height: 18px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: -0.02em;
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+
+	.profile-function {
+		height: 30px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 15px;
+		letter-spacing: -0.02em;
+		color: #f78c89;
+	}
+
+	.t-profile {
+		width: 17.79px;
+		background-color: #d9d9d9;
+	}
+
+	.profile-d {
+		height: 26px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 9px;
+		line-height: 14px;
+		letter-spacing: -0.06em;
+		color: #000;
+	}
+
+	.showMore {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 22px 4px;
+		gap: 10px;
+		box-sizing: border-box;
+		width: 356px;
+		height: 38px;
+		margin-top: 20px;
+		border: 1px solid #dcdcdc;
+		border-radius: 4px;
+		margin-bottom: 20px;
 	}
 
 }
