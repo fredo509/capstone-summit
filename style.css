@@ -109,8 +109,6 @@ body {
 		justify-content: center;
 		width: 100%;
 		align-items: center;
-
-
 	}
 
 	#logo {
@@ -147,6 +145,7 @@ body {
 		background: url('./images/theme.svg');
 		background-repeat: no-repeat;
 		background-size: 100%;
+		margin-top: 50px;
 		margin-bottom: 15px;
 	}
 
