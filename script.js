@@ -1,5 +1,20 @@
 // display speakers
 
+const menuIcon = document.querySelector('#icM');
+const menuItem = document.querySelector('#navL');
+const presentationSection = document.querySelector('#presentation');
+
+menuIcon.addEventListener('click', () => {
+  menuItem.classList.toggle('showMenu');
+  menuIcon.classList.toggle('changeIcon');
+  presentationSection.classList.toggle('present-js');
+});
+
+presentationSection.addEventListener('click', () => {
+  menuItem.classList.remove('showMenu');
+  menuIcon.classList.remove('changeIcon');
+});
+
 const speakers = [{
   name: ['Fredo st fleur', 'Jean Marie', 'Jean Pierre', 'Marie claude'],
   infoproject: ['Back end Dev', '2015'],
@@ -11,11 +26,11 @@ const speakers = [{
 }];
 
 const bodyLoad = () => {
-  const dataContainer = document.createElement('div');
-  dataContainer.classList.add('dataContainer');
+  const dataContainer = document.createElement('section');
+  dataContainer.classList.add('speakers');
   document.body.appendChild(dataContainer);
 
-  dataContainer.innerHTML = `<section class="speakers">
+  dataContainer.innerHTML = `
             <div class ="profile-card">
                 <div class="main-program ft-speakers">
                     <p>Featured speakers </p>
@@ -45,6 +60,6 @@ const bodyLoad = () => {
                     </div>
                 </div>
             </div>
-            <button class="showMore"> Show More  </button>
-        </section>`;
+            <button class="showMore">More</button>
+        `;
 };

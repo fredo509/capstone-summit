@@ -5,6 +5,29 @@ body {
 	padding: 0;
 }
 
+.preNav {
+	display: none;
+}
+
+.nav {
+	display: none;
+}
+
+.Hamberger {
+	background-image: url("./images/iconsO-menu.svg");
+	height: 30px;
+	background-repeat: no-repeat;
+	width: 30px;
+	position: absolute;
+	align-self: flex-start;
+	left: 20px;
+	top: 20px;
+	bottom: 20px;
+	margin: auto;
+	box-sizing: border-box;
+	z-index: 1;
+}
+
 @media screen and (width < 768px) {
 	#header {
 		height: 60px;
@@ -16,7 +39,68 @@ body {
 		position: sticky;
 		width: 100%;
 		box-sizing: border-box;
-		position: sticky;
+		position: fixed;
+		background-color: #fff;
+	}
+
+	.showMenu {
+		display: block;
+	}
+
+	.nav {
+		position: absolute;
+		background-color: #fffffff5;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		min-height: 100vh;
+		width: 70%;
+	}
+
+	#about {
+		color: #ff4f38;
+	}
+
+	#nav-btn {
+		box-sizing: border-box;
+		width: 123px;
+		height: 48px;
+		border: 5px solid #ec4327;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.nav-item {
+		display: flex;
+		flex-direction: column;
+
+		position: absolute;
+		top: 60px;
+		list-style: none;
+		min-height: 40vh;
+		justify-content: space-between;
+	}
+
+	.nav-list a {
+		text-decoration: none;
+		width: 52px;
+		height: 13px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 17px;
+		line-height: 17px;
+		display: flex;
+		align-items: center;
+		color: #8686;
+	}
+
+	.changeIcon {
+		background-image: url('./images/iconsClose.svg');
 	}
 
 	.navbar {
@@ -25,6 +109,8 @@ body {
 		justify-content: center;
 		width: 100%;
 		align-items: center;
+
+
 	}
 
 	#logo {
@@ -32,31 +118,8 @@ body {
 		justify-self: center;
 		justify-content: center;
 		width: 100%;
+		z-index: 1;
 		display: flex;
-	}
-
-	.preNav {
-		display: none;
-	}
-
-	.nav {
-		display: none;
-	}
-
-	.Hamberger {
-		background-image: url("./images/iconsO-menu.svg");
-		height: 30px;
-		background-repeat: no-repeat;
-		width: 30px;
-		position: absolute;
-		z-index: 2;
-		align-self: flex-start;
-		left: 20px;
-		top: 20px;
-		bottom: 20px;
-		margin: auto;
-		box-sizing: border-box;
-
 	}
 
 	#presentation {
@@ -209,7 +272,6 @@ body {
 	.program-text {
 		width: 191.77px;
 		height: 82.06px;
-
 		font-family: 'Lato', sans-serif;
 		font-style: normal;
 		font-weight: 700;
@@ -321,12 +383,17 @@ body {
 		padding: 22px 4px;
 		gap: 10px;
 		box-sizing: border-box;
-		width: 356px;
+		width: 306px;
 		height: 38px;
-		margin-top: 20px;
+		margin-top: 40px;
 		border: 1px solid #dcdcdc;
 		border-radius: 4px;
-		margin-bottom: 20px;
+		margin-bottom: 70px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 11px;
+		line-height: 28px;
+		color: #000;
 	}
-
 }
