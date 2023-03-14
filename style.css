@@ -146,7 +146,7 @@ body {
 		background-repeat: no-repeat;
 		background-size: 100%;
 		margin-top: 50px;
-		margin-bottom: 15px;
+		margin-bottom: 7px;
 	}
 
 	.presentation-desc {
@@ -279,7 +279,6 @@ body {
 		display: flex;
 		align-items: center;
 		letter-spacing: 0.06em;
-
 		color: #fff;
 	}
 
