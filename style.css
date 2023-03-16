@@ -323,6 +323,8 @@ body {
 		letter-spacing: -0.01em;
 	}
 
+	/* featured speakers */
+
 	.featured {
 		display: flex;
 		flex-direction: column;
@@ -549,32 +551,29 @@ body {
 
 	/* section presentation */
 
-	/* #presentation {
+	#presentation {
 		background-image: url("https://th.bing.com/th/id/R.184dfc46de57f407b899271605d526a2?rik=FsUY%2bgWQhKeeCg&riu=http%3a%2f%2fwww.pearltrees.com%2fs%2fbackground%2fimage%2fc2%2f80%2fc280e28110cfbcb4c221c1d2fde07c32.jpg&ehk=%2b7Fmn9It1auhqZeBq1yrWv9sAviRKzIus8sgMzhZQv4%3d&risl=&pid=ImgRaw&r=0");
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		min-height: 65vh;
+		min-height: 100vh;
 		margin-bottom: -20px;
 		box-sizing: border-box;
-		height: 100vh;
-		
 	}
 
 	.cover {
 		background-color: #f8f8f8ee;
 		width: 100%;
-		height: 100vh;
-		padding: 80px 18px;
+		min-height: 100vh;
 		box-sizing: border-box;
 		margin: 0;
-		padding: 50px  200px;
+		padding: 10px 200px;
 	}
 
 	.presentation-greeting {
 		height: auto;
 		width: 100%;
 		box-sizing: border-box;
-		margin-top: 35px;
+		margin-top: 45px;
 		margin-bottom: 7px;
 	}
 
@@ -603,20 +602,24 @@ body {
 	}
 
 	.presentation-desc {
-		width: 100%;
-		height: auto;
+		width: 90%;
 		font-family: 'Lato', sans-serif;
-		box-sizing: border-box;
 		font-weight: 400;
-		font-size: 17px;
-		line-height: 32px;
+		font-size: 1.3rem;
+		line-height: 26px;
 		display: flex;
 		align-items: center;
 		letter-spacing: -0.01em;
 		color: #515151;
 		background: #f8f8f8;
 		border: 4px solid #fff;
-		padding: 20px;
+		width: 70%;
+		margin-top: -20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+
 	}
 
 	.date {
@@ -624,13 +627,12 @@ body {
 		font-style: normal;
 		font-weight: 900;
 		font-size: 42px;
-		line-height: 0px;
-		width: 100%;
+		width: 286.39px;
 		height: 36.76px;
 		display: flex;
 		align-items: center;
-		letter-spacing: -0.08em;
 		color: #595959;
+		width: 100%;
 	}
 
 	.adresse {
@@ -643,102 +645,179 @@ body {
 		align-items: center;
 		letter-spacing: -0.02em;
 		color: #868686;
-	} */
+	}
 
-		#presentation {
-			background-image: url("https://th.bing.com/th/id/R.184dfc46de57f407b899271605d526a2?rik=FsUY%2bgWQhKeeCg&riu=http%3a%2f%2fwww.pearltrees.com%2fs%2fbackground%2fimage%2fc2%2f80%2fc280e28110cfbcb4c221c1d2fde07c32.jpg&ehk=%2b7Fmn9It1auhqZeBq1yrWv9sAviRKzIus8sgMzhZQv4%3d&risl=&pid=ImgRaw&r=0");
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-			min-height: 100vh;
-			margin-bottom: -20px;
+	/* program section  */
+
+	#program {
+		background-image: url("https://avante.biz/wp-content/uploads/Black-Pattern-Wallpaper/Black-Pattern-Wallpaper-013.jpg");
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		display: flex;
+		mix-blend-mode: normal;
+		padding-bottom: 30px;
+	}
+
+	.main-program {
+		width: 100%;
+		gap: 0;
+		height: 77px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		letter-spacing: -0.04em;
+		color: #fff;
+		flex-direction: column;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.t-buttom {
+		height: 3px;
+		width: 40px;
+		margin-top: -10px;
+		padding: 0;
+		background-color: #a04038;
+		box-sizing: border-box;
+	}
+
+	.program-grid {
+		display: flex;
+		justify-items: center;
+		width: 75%;
+	}
+
+	.program-item {
+		background-color: #ffffff48;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		text-align: justify;
+		padding: 10px;
+		margin-right: 8px;
+
+	}
+
+	.program-title {
+
+		height: auto;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14.2712px;
+		line-height: 25px;
+		letter-spacing: -0.01em;
+		color: #ff5438;
+		align-self: center;
+		text-align: center;
+	}
+
+	.program-text {
+
+		height: 82.06px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 10.7034px;
+		line-height: 22px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.06em;
+		color: #fff;
+	}
+
+	.btnJoin {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 40px;
+		gap: 10px;
+		width: 300px;
+		height: 68px;
+		background: #ff4f38;
+		margin-top: 20px;
+		width: 36%;
+		height: 28px;
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+		font-weight: 900;
+		font-size: 16px;
+		line-height: 28px;
+		letter-spacing: -0.01em;
+	}
+
+	/* .t-buttom {
+			height: 3px;
+			width: 40px;
+			margin-top: -10px;
+			padding: 0;
+			background-color: #a04038;
 			box-sizing: border-box;
 		}
 	
-		.cover {
-			background-color: #f8f8f8ee;
-			width: 100%;
-			min-height: 100vh;
-			box-sizing: border-box;
-			margin: 0;
-			padding: 10px 200px;
-		}
+		
 	
-		.presentation-greeting {
+	
+	
+		.program-title {
+			width: 65.11px;
 			height: auto;
-			width: 100%;
-			box-sizing: border-box;
-			margin-top: 45px;
-			margin-bottom: 7px;
-		}
-	
-		.hello {
-			color: orangered;
-			font-weight: 100;
-			font-size: 2vw;
-			line-height: 23px;
-			margin: 0;
-			margin-bottom: -30px;
-		}
-	
-		.creativeText {
-			background-image: url('https://files.123freevectors.com/wp-content/original/113144-red-and-orange-blurred-background-vector.jpg');
-			background-color: orangered;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			font-size: 3vw;
-			font-weight: 900;
-			background-color: #000;
-			font-family: 'Lato', sans-serif;
-		}
-	
-		.presentation-desc {
-			width: 90%;
-			font-family: 'Lato', sans-serif;
-			font-weight: 400;
-			font-size: 1.3rem;
-			line-height: 26px;
-			display: flex;
-			align-items: center;
-			letter-spacing: -0.01em;
-			color: #515151;
-			background: #f8f8f8;
-			border: 4px solid #fff;
-			width: 70%;
-			margin-top: -20px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 10px;
-
-		}
-	
-		.date {
 			font-family: 'Lato', sans-serif;
 			font-style: normal;
-			font-weight: 900;
-			font-size: 42px;
-			line-height: ;
-			width: 286.39px;
-			height: 36.76px;
-			display: flex;
-			align-items: center;
-			color: #595959;
-			width: 100%;
+			font-weight: 700;
+			font-size: 14.2712px;
+			line-height: 25px;
+			letter-spacing: -0.01em;
+			margin-right: 20px;
+			margin-left: 20px;
+			color: #ff5438;
+			align-self: center;
 		}
 	
-		.adresse {
-			font-family: 'Gothic A1', sans-serif;
-			box-sizing: border-box;
+		.program-text {
+			width: 191.77px;
+			height: 82.06px;
+			font-family: 'Lato', sans-serif;
+			font-style: normal;
 			font-weight: 700;
-			font-size: 27px;
-			line-height: 20px;
+			font-size: 10.7034px;
+			line-height: 22px;
 			display: flex;
 			align-items: center;
-			letter-spacing: -0.02em;
-			color: #868686;
+			letter-spacing: 0.06em;
+			color: #fff;
 		}
-}
+	
+		.btnJoin {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 20px 40px;
+			gap: 10px;
+			width: 300px;
+			height: 68px;
+			background: #ff4f38;
+			margin-top: 20px;
+			width: 76%;
+			height: 28px;
+			color: #fff;
+			font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			font-size: 16px;
+			line-height: 28px;
+			letter-spacing: -0.01em;
+		}
+
+
+} */

@@ -27,7 +27,8 @@ const speakers = [{
   image: './images/speaker_01 2.svg',
   function: 'Mariane Professor of Entrepreneurial Legal Studies at Harvard Law School',
   profileDescription: 'Mariane studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
-}];
+},
+];
 
 const profile = document.getElementById('speakers');
 
