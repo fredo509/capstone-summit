@@ -332,12 +332,15 @@ body {
 		align-items: center;
 		padding-bottom: 35px;
 		height: auto;
+		background-color: #a04038;
 	}
 
 	#speakers {
 		display: grid;
 		grid-column: auto;
 		justify-items: center;
+		height: 350px;
+		overflow: hidden;
 	}
 
 	.ft-speakers {
@@ -437,6 +440,18 @@ body {
 		font-size: 11px;
 		line-height: 28px;
 		color: #000;
+	}
+
+	.showMoreExpand {
+		height: auto;
+	}
+
+	.partner {
+		display: none;
+	}
+
+	.footer {
+		display: none;
 	}
 }
 
@@ -756,68 +771,153 @@ body {
 		letter-spacing: -0.01em;
 	}
 
-	/* .t-buttom {
-			height: 3px;
-			width: 40px;
-			margin-top: -10px;
-			padding: 0;
-			background-color: #a04038;
-			box-sizing: border-box;
-		}
-	
-		
-	
-	
-	
-		.program-title {
-			width: 65.11px;
-			height: auto;
-			font-family: 'Lato', sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			font-size: 14.2712px;
-			line-height: 25px;
-			letter-spacing: -0.01em;
-			margin-right: 20px;
-			margin-left: 20px;
-			color: #ff5438;
-			align-self: center;
-		}
-	
-		.program-text {
-			width: 191.77px;
-			height: 82.06px;
-			font-family: 'Lato', sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			font-size: 10.7034px;
-			line-height: 22px;
-			display: flex;
-			align-items: center;
-			letter-spacing: 0.06em;
-			color: #fff;
-		}
-	
-		.btnJoin {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			padding: 20px 40px;
-			gap: 10px;
-			width: 300px;
-			height: 68px;
-			background: #ff4f38;
-			margin-top: 20px;
-			width: 76%;
-			height: 28px;
-			color: #fff;
-			font-family: 'Lato', sans-serif;
-			font-weight: 900;
-			font-size: 16px;
-			line-height: 28px;
-			letter-spacing: -0.01em;
-		}
+	/* featured speakers */
 
+	.featured {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		padding-bottom: 35px;
+		height: auto;
+	}
 
-} */
+	#speakers {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-items: center;
+	}
+
+	.ft-speakers {
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		letter-spacing: -0.05em;
+		color: #000;
+		margin-bottom: 15px;
+	}
+
+	.profile-card {
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto auto;
+		row-gap: 12px;
+		height: 20px;
+	}
+
+	.profile-picture {
+		margin-right: 20px;
+	}
+
+	#profile {
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+		width: 95%;
+	}
+
+	.profile-nom {
+		height: 18px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: -0.02em;
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+
+	.profile-function {
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 15px;
+		letter-spacing: -0.02em;
+		color: #f78c89;
+		width: 226px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.02em;
+	}
+
+	.t-profile {
+		width: 17.79px;
+		background-color: #d9d9d9;
+	}
+
+	.profile-d {
+		height: 26px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 9px;
+		line-height: 14px;
+		letter-spacing: -0.06em;
+		color: #000;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.06em;
+	}
+
+	.showMore {
+		display: none;
+	}
+
+	/* partner section  */
+
+	.pat {
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.partner {
+		background: #414246;
+		padding-bottom: 15px;
+		margin-top: 15px;
+	}
+
+	.pat-logo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.logo-b1 {
+		margin-right: 15px;
+	}
+
+	/* footer style */
+
+	footer {
+		height: 20px;
+		display: flex;
+		height: 60px;
+		justify-content: space-around;
+		align-items: center;
+		padding: 20px;
+	}
+
+	.copyright {
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 13px;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.01em;
+		color: #3b3e45;
+	}
+}
