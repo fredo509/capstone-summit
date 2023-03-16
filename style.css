@@ -32,6 +32,11 @@ body {
 	z-index: 1;
 }
 
+.speakerImg {
+	width: 118px;
+	height: 117px;
+}
+
 @media screen and (width < 768px) {
 	#header {
 		height: 60px;
@@ -174,7 +179,6 @@ body {
 	}
 
 	.presentation-desc {
-
 		height: 51px;
 		font-family: 'Lato', sans-serif;
 		box-sizing: border-box;
@@ -494,7 +498,7 @@ body {
 		padding: 0;
 	}
 
-	.preNav-item li {
+	.preNav-item a {
 		margin-right: 15px;
 		color: #fff;
 		font-family: 'Lato', sans-serif;
@@ -503,6 +507,7 @@ body {
 		font-size: 12px;
 		line-height: 14px;
 		align-self: center;
+		text-decoration: none;
 	}
 
 	.navbar {

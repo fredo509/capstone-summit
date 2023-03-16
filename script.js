@@ -22,25 +22,48 @@ presentationSection.addEventListener('click', () => {
 });
 
 const speakers = [{
-  name: 'Yochai Benkler',
-  image: './images/speaker_01 1.svg',
-  function: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+  name: 'Nedgine Paul Deroly',
+  image: 'https://haititechsummit.com/wp-content/uploads/2022/12/6258d5e91d7e4d318be0075a_nedgine-paul-deroly_2-qi2qz-500x500.jpeg',
+  function: 'Co-founder & CEO, Anseye Pou Ayiti',
   profileDescription: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
 },
 
 {
-  name: 'Mariane Jean',
-  image: './images/speaker_01 2.svg',
-  function: 'Mariane Professor of Entrepreneurial Legal Studies at Harvard Law School',
+  name: 'Einstein Ntim',
+  image: 'https://haititechsummit.com/wp-content/uploads/2022/12/Einstein-Ntim-500x500.png',
+  function: 'Chairman, Global Startup Ecosystem',
   profileDescription: 'Mariane studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
 },
 
 {
-  name: 'Mariane Jean',
-  image: './images/speaker_01 2.svg',
-  function: 'Mariane Professor of Entrepreneurial Legal Studies at Harvard Law School',
+  name: 'Leticia Boateng',
+  image: 'https://haititechsummit.com/wp-content/uploads/2022/12/DSC0416-Edit-5-500x500.jpg',
+  function: 'CEO, ALPHANET| HITPAY.Com',
   profileDescription: 'Mariane studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
-}];
+},
+
+{
+  name: 'Staniel Tetteh',
+  image: 'https://haititechsummit.com/wp-content/uploads/2022/12/GSE-1-500x500.jpg',
+  function: 'Startup Programs and Projects Manager, Global Startup Ecosystem',
+  profileDescription: 'Mariane studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
+},
+
+{
+  name: 'Ryan Foland',
+  image: 'https://haititechsummit.com/wp-content/uploads/2022/11/ryan-foland-gallery_2-500x500-1-500x500.jpg',
+  function: 'Author, Ditch The Act| Brand consultant',
+  profileDescription: 'Mariane studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
+},
+
+{
+  name: 'Jaagriti Sharma',
+  image: 'https://haititechsummit.com/wp-content/uploads/2022/12/6080ae6d844390aea9f48aaf_RCC-Headshot-4-500x500.png',
+  function: 'Caribbean Tourism Accelerator: Haiti Cohort',
+  profileDescription: 'Mariane studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
+},
+
+];
 
 let html = '';
 
@@ -50,7 +73,7 @@ const bodyLoad = () => {
     html += `
 <div id="profile">
   <div class="profile-picture">
-  <img src="${speakers[index].image}" alt="speaker image">
+  <img src="${speakers[index].image}" alt="speaker image" class ="speakerImg">
 </div>
 <div profile-about>
 <p class="profile-nom">${speakers[index].name}</p>
