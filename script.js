@@ -1,18 +1,24 @@
+const profile = document.getElementById('speakers');
+const body = document.getElementsByTagName('body');
+
 // display speakers
 
 const menuIcon = document.querySelector('#icM');
+const HTML = document.getElementById('html');
 const menuItem = document.querySelector('#navL');
 const presentationSection = document.querySelector('#presentation');
 
 menuIcon.addEventListener('click', () => {
   menuItem.classList.toggle('showMenu');
   menuIcon.classList.toggle('changeIcon');
+  HTML.classList.toggle('unscroll');
   presentationSection.classList.toggle('present-js');
 });
 
 presentationSection.addEventListener('click', () => {
   menuItem.classList.remove('showMenu');
   menuIcon.classList.remove('changeIcon');
+  HTML.classList.remove('unscroll');
 });
 
 const speakers = [{
@@ -28,14 +34,19 @@ const speakers = [{
   function: 'Mariane Professor of Entrepreneurial Legal Studies at Harvard Law School',
   profileDescription: 'Mariane studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
 },
-];
 
-const profile = document.getElementById('speakers');
+{
+  name: 'Mariane Jean',
+  image: './images/speaker_01 2.svg',
+  function: 'Mariane Professor of Entrepreneurial Legal Studies at Harvard Law School',
+  profileDescription: 'Mariane studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
+}];
 
 let html = '';
 
 const bodyLoad = () => {
   speakers.forEach((element, index) => {
+    element = index;
     html += `
 <div id="profile">
   <div class="profile-picture">
@@ -51,3 +62,11 @@ const bodyLoad = () => {
     profile.innerHTML = html;
   });
 };
+
+const btnShow = document.getElementById('showPlus');
+const speakersBlock = document.getElementById('speakers');
+btnShow.addEventListener('click', () => {
+  speakersBlock.classList.toggle('showMoreExpand');
+});
+
+body.addEventListener('load', bodyLoad());
