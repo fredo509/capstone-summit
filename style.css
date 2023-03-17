@@ -37,7 +37,7 @@ body {
   height: 117px;
 }
 
-@media screen and (width < 768px) {
+@media screen and (width <= 768px) {
   #header {
     height: 60px;
     display: flex;
@@ -502,6 +502,10 @@ body {
     text-decoration: none;
   }
 
+   .preNav-item a:hover {
+	color: orangered;
+   }
+
   .navbar {
     display: flex;
     width: 100%;
@@ -539,7 +543,6 @@ body {
   .nav-list a {
     text-decoration: none;
     width: 52px;
-    height: 13px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -548,6 +551,14 @@ body {
     display: flex;
     align-items: center;
     color: #666;
+	height: 70px;
+	justify-content: center;
+  }
+
+  .nav-list a:hover {
+	border-bottom: orangered solid 4px;
+	height: 70px;
+	justify-content: center;
   }
 
   #nav-btn {
@@ -609,7 +620,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: 900;
     font-family: 'Lato', sans-serif;
   }
