@@ -1,733 +1,727 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .preNav {
-	display: none;
+  display: none;
 }
 
 .nav {
-	display: none;
+  display: none;
 }
 
 .Hamberger {
-	background-image: url("./images/iconsO-menu.svg");
-	height: 30px;
-	background-repeat: no-repeat;
-	width: 30px;
-	position: absolute;
-	align-self: flex-start;
-	left: 20px;
-	top: 20px;
-	bottom: 20px;
-	margin: auto;
-	box-sizing: border-box;
-	z-index: 1;
+  background-image: url("./images/iconsO-menu.svg");
+  height: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+  position: absolute;
+  align-self: flex-start;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  margin: auto;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 /* //Mobile version  */
 
 @media screen and (width < 768px) {
-	#header {
-		height: 60px;
-		padding: auto;
-		display: flex;
-		gap: 0;
-		align-items: center;
-		padding: 0 18px;
-		position: sticky;
-		width: 100%;
-		box-sizing: border-box;
-		position: fixed;
-		background-color: #fff;
-	}
+  #header {
+    height: 60px;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    padding: 0 18px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: #fff;
+  }
 
-	.showMenu {
-		display: block;
-	}
+  .showMenu {
+    display: block;
+  }
 
-	.nav {
-		position: absolute;
-		background-color: #fffffff5;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		min-height: 100vh;
-		width: 70%;
-	}
+  .nav {
+    position: absolute;
+    background-color: #fffffff5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 70%;
+  }
 
-	#about {
-		color: #ff4f38;
-	}
+  #about {
+    color: #ff4f38;
+  }
 
-	#nav-btn {
-		box-sizing: border-box;
-		width: 123px;
-		height: 48px;
-		border: 5px solid #ec4327;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 800;
-		font-size: 14px;
-		line-height: 17px;
-	}
+  #nav-btn {
+    box-sizing: border-box;
+    width: 123px;
+    height: 48px;
+    border: 5px solid #ec4327;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+  }
 
-	.nav-item {
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		top: 60px;
-		list-style: none;
-		min-height: 40vh;
-		justify-content: space-between;
-	}
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    list-style: none;
+    min-height: 40vh;
+    justify-content: space-between;
+  }
 
-	.nav-list a {
-		text-decoration: none;
-		width: 52px;
-		height: 13px;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 800;
-		font-size: 17px;
-		line-height: 17px;
-		display: flex;
-		align-items: center;
-		color: #666666;
-	}
+  .nav-list a {
+    text-decoration: none;
+    width: 52px;
+    height: 13px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
 
-	.changeIcon {
-		background-image: url('./images/iconsClose.svg');
-	}
+  .changeIcon {
+    background-image: url('./images/iconsClose.svg');
+  }
 
-	.navbar {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: center;
-		width: 100%;
-		align-items: center;
-	}
+  .navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
 
-	#logo {
-		align-self: center;
-		justify-self: center;
-		justify-content: center;
-		width: 100%;
-		z-index: 1;
-		display: flex;
-	}
+  #logo {
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+  }
 
-	/*presentation section */
-	/* contact style   */
+  /* presentation section */
 
-	.helloC {
-		align-items: center;
-		width: 100%;
-		justify-content: center;
-		display: flex;
-	}
+  /* contact style   */
 
-	.creativeTextC br {
-		display: none;
-	}
+  .helloC {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
 
+  .creativeTextC br {
+    display: none;
+  }
 
+  #presentation {
+    background-image: url("https://i.pinimg.com/originals/c3/1c/ce/c31cce295f534f3c3997d9fdb526d581.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 25vh;
 
-	#presentation {
-		background-image: url("https://th.bing.com/th/id/R.184dfc46de57f407b899271605d526a2?rik=FsUY%2bgWQhKeeCg&riu=http%3a%2f%2fwww.pearltrees.com%2fs%2fbackground%2fimage%2fc2%2f80%2fc280e28110cfbcb4c221c1d2fde07c32.jpg&ehk=%2b7Fmn9It1auhqZeBq1yrWv9sAviRKzIus8sgMzhZQv4%3d&risl=&pid=ImgRaw&r=0");
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		min-height: 25vh;
-		/* margin-bottom: -20px; */
-		box-sizing: border-box;
-	}
+    /* margin-bottom: -20px; */
+    box-sizing: border-box;
+  }
 
-	.cover {
-		background-color: #f8f8f8ee;
-		width: 100%;
-		min-height: 25vh;
-		padding: 80px 0 20px 0;
-		box-sizing: border-box;
-		margin: 0;
-	}
+  .cover {
+    background-color: #f8f8f8ee;
+    width: 100%;
+    min-height: 25vh;
+    padding: 80px 0 20px 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-	.presentation-greeting {
-		height: auto;
-		width: 100%;
-		box-sizing: border-box;
-		margin-top: 0;
-		margin-bottom: 7px;
-		;
-	}
+  .presentation-greeting {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
 
-	.hello {
-		color: orangered;
-		font-weight: 100;
-		font-size: 6vw;
-		line-height: 23px;
-		margin: 0;
-		margin-bottom: -20px;
-	}
+  .hello {
+    color: orangered;
+    font-weight: 100;
+    font-size: 6vw;
+    line-height: 23px;
+    margin: 0;
+    margin-bottom: -20px;
+  }
 
-	.creativeText {
-		background-image: url('https://files.123freevectors.com/wp-content/original/113144-red-and-orange-blurred-background-vector.jpg');
-		background-color: orangered;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		font-size: 7vw;
-		font-weight: 900;
-		font-family: 'Lato', sans-serif;
-		text-align: center;
-	}
+  .creativeText {
+    background-image: url('https://files.123freevectors.com/wp-content/original/113144-red-and-orange-blurred-background-vector.jpg');
+    background-color: orangered;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 7vw;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
 
-	.presentation-desc {
-		height: auto;
-		font-family: 'Lato', sans-serif;
-		box-sizing: border-box;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 17px;
-		display: flex;
-		align-items: center;
-		letter-spacing: -0.01em;
-		color: #000;
-		background: #fff;
-		text-align: center;
-		display: flex;
-		width: 100%;
-		padding: 10px;
-	}
+  .presentation-desc {
+    height: auto;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #000;
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
 
-	.presentation-desc2 {
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 12px;
-		line-height: 25px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		color: #7a7a7a;
-		width: 50%;
-		justify-content: center;
-		margin: auto;
-	}
+  .about-desk {
+    display: none;
+  }
 
-	#email {
-		color: #000;
-	}
+  .presentation-desc2 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #7a7a7a;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+  }
 
-	#program {
-		width: 100%;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		display: flex;
-		mix-blend-mode: normal;
-		padding-bottom: 30px;
-	}
+  #email {
+    color: #000;
+  }
 
-	.main-program {
-		width: 100%;
-		gap: 0;
-		height: 97px;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 28px;
-		letter-spacing: -0.04em;
-		color: #2c2c2c;
-		flex-direction: column;
-		text-align: center;
-		display: flex;
-		align-items: center;
-		width: 100%;
-		box-sizing: border-box;
-	}
+  #program {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    mix-blend-mode: normal;
+    padding-bottom: 30px;
+  }
 
-	.t-buttom {
-		height: 3px;
-		width: 40px;
-		margin-top: -10px;
-		padding: 0;
-		background-color: #a04038;
-		box-sizing: border-box;
-	}
+  .main-program {
+    gap: 0;
+    height: 97px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    color: #2c2c2c;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-	.log-text {
-		width: 354px;
-		height: 42px;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 21px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		letter-spacing: -0.03em;
-		color: #838383;
-		margin: auto;
-	}
+  .t-buttom {
+    height: 3px;
+    width: 40px;
+    margin-top: -10px;
+    padding: 0;
+    background-color: #a04038;
+    box-sizing: border-box;
+  }
 
-	.logo {
-		margin-top: 20px;
-		width: 100%;
-		height: 20vh;
-		background-size: 50%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-image: url('./images/logo.svg');
-	}
+  .log-text {
+    width: 354px;
+    height: 42px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #838383;
+    margin: auto;
+  }
 
-	.two-pic {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		height: auto;
-		justify-content: center;
-		align-items: center;
-		margin-top: 20px;
-	}
+  .logo {
+    margin: auto;
+    width: 220px;
+    height: 150px;
+    margin-top: 20px;
+    background-image: url('https://i.ytimg.com/vi/gX2D5J1Je9g/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-	.p1 {
-		width: 90%;
-		height: 30vh;
-		background-image: url('https://www.radiohaiti.org/wp-content/uploads/2019/06/Haiti-Tech-Summit.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		box-sizing: border-box;
-		margin-bottom: 15px;
-	}
+  .two-pic {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 
-	.p2 {
-		background-image: url('https://pctechmag.com/wp-content/uploads/2018/04/Haiti-Tech-Summit-5.jpg');
-	}
+  .p1 {
+    width: 90%;
+    height: 30vh;
+    background-image: url('https://www.radiohaiti.org/wp-content/uploads/2019/06/Haiti-Tech-Summit.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
 
-	.p1 p {
-		width: 100%;
-		height: 30vh;
-		display: flex;
-		margin: 0;
-		background-color: #ec2727c9;
-		align-items: center;
-		color: white;
-		text-align: center;
-		justify-content: center;
-		flex-direction: column;
-	}
+  .p2 {
+    background-image: url('https://pctechmag.com/wp-content/uploads/2018/04/Haiti-Tech-Summit-5.jpg');
+  }
 
-	.ane {
-		font-size: 40px;
-		font-weight: 900;
-	}
+  .p1 p {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    margin: 0;
+    background-color: #ec2727c9;
+    align-items: center;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-	/* partner section  */
+  .ane {
+    font-size: 40px;
+    font-weight: 900;
+  }
 
-	.pat {
-		color: #fff;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 28px;
-	}
+  /* partner section  */
 
-	.partner {
-		background: #414246;
-		padding-bottom: 15px;
-		margin-top: 15px;
-	}
+  .pat {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
 
-	.pat-logo {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		height: auto;
-		justify-content: center;
-		align-items: center;
-	}
+  .partner {
+    background: #414246;
+    padding-bottom: 15px;
+    margin-top: 15px;
+  }
 
-	.logo-b1 {
-		margin-bottom: 15px;
-	}
+  .pat-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
 
-	/* footer style */
+  .logo-b1 {
+    margin-bottom: 15px;
+  }
 
-	footer {
-		height: 20px;
-		display: flex;
-		height: 60px;
-		justify-content: space-around;
-		align-items: center;
-		padding: 20px;
-	}
+  /* footer style */
 
-	.copyright {
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 10px;
-		line-height: 13px;
-		display: flex;
-		align-items: center;
-		letter-spacing: -0.01em;
-		color: #3b3e45;
-	}
+  footer {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .copyright {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #3b3e45;
+  }
 }
 
 /* Style for desktop version */
 
 @media screen and (width > 768px) {
-	#header {
-		display: flex;
-		flex-direction: column;
-		gap: 0;
-		align-items: center;
-		box-sizing: border-box;
-		background-color: #fff;
-		box-sizing: border-box;
-	}
+  #header {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
 
-	.Hamberger {
-		display: none;
-	}
+  .Hamberger {
+    display: none;
+  }
 
-	.preNav {
-		display: flex;
-		background-color: rgb(53, 53, 53);
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		height: 25px;
-		align-items: center;
-		justify-content: flex-end;
-	}
+  .preNav {
+    display: flex;
+    background-color: rgb(53, 53, 53);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-	.preNav-item {
-		display: flex;
-		list-style: none;
-		justify-content: space-around;
-		min-width: 180px;
-		margin-right: 210px;
-		padding: 0;
-	}
+  .preNav-item {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    min-width: 180px;
+    margin-right: 210px;
+    padding: 0;
+  }
 
-	.preNav-item li {
-		margin-right: 15px;
-		color: #fff;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 14px;
-		align-self: center;
-	}
+  .preNav-item a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    align-self: center;
+  }
 
-	.navbar {
-		display: flex;
-		width: 100%;
-		height: 70px;
-		align-items: center;
-		box-sizing: border-box;
-		padding: 0 200px;
-		justify-content: space-between;
-	}
+  .navbar {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 200px;
+    justify-content: space-between;
+  }
 
-	#logo {
-		align-self: center;
-		display: flex;
-	}
+  #logo {
+    align-self: center;
+    display: flex;
+  }
 
-	.nav {
-		width: 70%;
-		display: block;
-	}
+  .nav {
+    width: 70%;
+    display: block;
+  }
 
-	#about {
-		color: #ff4f38;
-	}
+  #about {
+    color: #ff4f38;
+  }
 
-	.nav-item {
-		display: flex;
-		flex-direction: row;
-		list-style: none;
-		align-items: center;
-		justify-content: space-around;
-		width: 100%;
-		padding: 0;
-	}
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+  }
 
-	.nav-list a {
-		text-decoration: none;
-		width: 52px;
-		height: 13px;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 800;
-		font-size: 14px;
-		line-height: 17px;
-		display: flex;
-		align-items: center;
-		color: #666666;
-	}
+  .nav-list a {
+    text-decoration: none;
+    width: 52px;
+    height: 13px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
 
-	#nav-btn {
-		box-sizing: border-box;
-		width: 123px;
-		height: 48px;
-		border: 5px solid #ec4327;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 800;
-		font-size: 14px;
-		line-height: 17px;
-		color: #ec4327;
-	}
+  #nav-btn {
+    box-sizing: border-box;
+    width: 123px;
+    height: 48px;
+    border: 5px solid #ec4327;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ec4327;
+  }
 
-	/*presentation section */
+  /* presentation section */
 
-	.helloC {
-		align-items: center;
-		width: 100%;
-		justify-content: center;
-		display: flex;
-	}
+  .helloC {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
 
-	.creativeTextC br {
-		display: none;
-	}
+  .creativeTextC br {
+    display: none;
+  }
 
+  #presentation {
+    background-image: url("https://i.pinimg.com/originals/c3/1c/ce/c31cce295f534f3c3997d9fdb526d581.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
 
+    /* margin-bottom: -20px; */
+    box-sizing: border-box;
+  }
 
-	#presentation {
-		background-image: url("https://th.bing.com/th/id/R.184dfc46de57f407b899271605d526a2?rik=FsUY%2bgWQhKeeCg&riu=http%3a%2f%2fwww.pearltrees.com%2fs%2fbackground%2fimage%2fc2%2f80%2fc280e28110cfbcb4c221c1d2fde07c32.jpg&ehk=%2b7Fmn9It1auhqZeBq1yrWv9sAviRKzIus8sgMzhZQv4%3d&risl=&pid=ImgRaw&r=0");
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		min-height: 100vh;
-		/* margin-bottom: -20px; */
-		box-sizing: border-box;
-	}
+  .cover {
+    background-color: #f8f8f8ee;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 0 20px 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-	.cover {
-		background-color: #f8f8f8ee;
-		width: 100%;
-		min-height: 100vh;
-		padding: 80px 0 20px 0;
-		box-sizing: border-box;
-		margin: 0;
-	}
+  .presentation-greeting {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
 
-	.presentation-greeting {
-		height: auto;
-		width: 100%;
-		box-sizing: border-box;
-		margin-top: 0;
-		margin-bottom: 7px;
-	}
+  .hello {
+    display: none;
+  }
 
-	.hello {
-		display: none;
-	}
+  .creativeText {
+    color: orangered;
+    font-size: 5vw;
+    font-weight: 900;
+    width: 60%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
 
-	.creativeText {
-		color: orangered;
-		font-size: 5vw;
-		font-weight: 900;
-		width: 60%;
-		margin: auto;
-		font-family: 'Lato', sans-serif;
-		text-align: center;
-	}
+  .presentation-desc {
+    height: auto;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #000;
+    background: #fff;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+  }
 
-	.presentation-desc {
-		height: auto;
-		font-family: 'Lato', sans-serif;
-		box-sizing: border-box;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 25px;
-		display: flex;
-		align-items: center;
-		letter-spacing: -0.01em;
-		color: #000;
-		background: #fff;
-		text-align: center;
-		display: flex;
-		width: 70%;
-		text-align: center;
-		margin: auto;
-		padding: 10px;
-	}
+  .presentation-desc2 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #7a7a7a;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+  }
 
-	.presentation-desc2 {
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 25px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		color: #7a7a7a;
-		width: 50%;
-		justify-content: center;
-		margin: auto;
-	}
+  #email {
+    color: #000;
+    font-size: 17px;
+    line-height: 25px;
+  }
 
-	#email {
-		color: #000;
-		font-size: 17px;
-		line-height: 25px;
-	}
+  #program {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    mix-blend-mode: normal;
+    padding-bottom: 30px;
+  }
 
-	#program {
-		width: 100%;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		display: flex;
-		mix-blend-mode: normal;
-		padding-bottom: 30px;
-	}
+  .main-program {
+    gap: 0;
+    height: 97px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    color: #2c2c2c;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-	.main-program {
-		width: 100%;
-		gap: 0;
-		height: 97px;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 28px;
-		letter-spacing: -0.04em;
-		color: #2c2c2c;
-		flex-direction: column;
-		text-align: center;
-		display: flex;
-		align-items: center;
-		width: 100%;
-		box-sizing: border-box;
-	}
+  .t-buttom {
+    height: 3px;
+    width: 40px;
+    margin-top: -10px;
+    padding: 0;
+    background-color: #a04038;
+    box-sizing: border-box;
+  }
 
-	.t-buttom {
-		height: 3px;
-		width: 40px;
-		margin-top: -10px;
-		padding: 0;
-		background-color: #a04038;
-		box-sizing: border-box;
-	}
+  .log-text {
+    width: 354px;
+    height: 42px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #838383;
+    margin: auto;
+  }
 
-	.log-text {
-		width: 354px;
-		height: 42px;
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 21px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		letter-spacing: -0.03em;
-		color: #838383;
-		margin: auto;
-	}
+  .logo {
+    width: 220px;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://i.ytimg.com/vi/gX2D5J1Je9g/maxresdefault.jpg');
+  }
 
-	.logo {
-		margin-top: 20px;
-		width: 100%;
-		height: 30vh;
-		background-size: 50%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-image: url('./images/logo.svg');
-	}
+  .two-pic {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 
-	.two-pic {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		height: auto;
-		justify-content: center;
-		align-items: center;
-		margin-top: 20px;
-	}
+  .p1 {
+    width: 70%;
+    height: 30vh;
+    background-image: url('https://www.radiohaiti.org/wp-content/uploads/2019/06/Haiti-Tech-Summit.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 15px;
+  }
 
-	.p1 {
-		width: 70%;
-		height: 30vh;
-		background-image: url('https://www.radiohaiti.org/wp-content/uploads/2019/06/Haiti-Tech-Summit.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		box-sizing: border-box;
-		margin: 15px;
-	}
+  .p2 {
+    background-image: url('https://pctechmag.com/wp-content/uploads/2018/04/Haiti-Tech-Summit-5.jpg');
+  }
 
-	.p2 {
-		background-image: url('https://pctechmag.com/wp-content/uploads/2018/04/Haiti-Tech-Summit-5.jpg');
-	}
+  .p1 p {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    margin: 0;
+    background-color: #ec2727c9;
+    align-items: center;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-	.p1 p {
-		width: 100%;
-		height: 30vh;
-		display: flex;
-		margin: 0;
-		background-color: #ec2727c9;
-		align-items: center;
-		color: white;
-		text-align: center;
-		justify-content: center;
-		flex-direction: column;
-	}
+  .ane {
+    font-size: 40px;
+    font-weight: 900;
+  }
 
-	.ane {
-		font-size: 40px;
-		font-weight: 900;
-	}
+  /* partner section  */
 
-	/* partner section  */
+  .partner {
+    display: none;
+  }
 
-	.partner {
-		display: none;
-	}
+  /* footer style */
 
-	/* footer style */
+  footer {
+    display: flex;
+    height: 60px;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: #414246;
+  }
 
-	footer {
-		height: 20px;
-		display: flex;
-		height: 60px;
-		margin-top: 20px;
-		justify-content: space-around;
-		align-items: center;
-		padding: 20px;
-		background: #414246;
-	}
-
-	.copyright {
-		font-family: 'Lato', sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 10px;
-		line-height: 13px;
-		display: flex;
-		align-items: center;
-		letter-spacing: -0.01em;
-		color: white;
-	}
+  .copyright {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: white;
+  }
 }
