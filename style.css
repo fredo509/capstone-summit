@@ -222,7 +222,7 @@ body {
   #program {
     background-image: url("https://avante.biz/wp-content/uploads/Black-Pattern-Wallpaper/Black-Pattern-Wallpaper-013.jpg");
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -312,12 +312,12 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 30px;
     gap: 10px;
     width: 300px;
     background: #ff4f38;
     margin-top: 20px;
-    height: 28px;
+    height: auto;
     color: #fff;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
