@@ -167,7 +167,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 7vw;
@@ -263,7 +262,6 @@ body {
     grid-template-columns: auto;
     justify-items: center;
     width: 100%;
-    grid-area: 10px;
     grid-row-gap: 12px;
   }
 
@@ -452,7 +450,6 @@ body {
     align-self: center;
     align-items: center;
     transform: rotate(90deg);
-    padding: auto;
   }
 
   .chevron::after {
@@ -634,7 +631,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3.5vw;
