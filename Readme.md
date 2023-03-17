@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="projectLogo.png" alt="logo" width="140"  height="auto" />
+  <img src="./images/projectLogo.png" alt="logo" width="170"  height="auto" />
   <br/>
 
   <h3><b>Haiti tec Summit </b></h3>
