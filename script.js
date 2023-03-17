@@ -90,6 +90,10 @@ const btnShow = document.getElementById('showPlus');
 const speakersBlock = document.getElementById('speakers');
 btnShow.addEventListener('click', () => {
   speakersBlock.classList.toggle('showMoreExpand');
+  btnShow.classList.toggle('chevron');
+  if (btnShow.innerHTML === 'More') {
+    btnShow.innerHTML = 'Less';
+  } else { btnShow.innerHTML = 'More'; }
 });
 
 body.addEventListener('load', bodyLoad());
